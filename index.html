@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Tool Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Daily Tool Box</h1>
+  </header>
+  
+  <main>
+    <section id="joke-section" aria-label="Random Dad Joke">
+      <h2>Dad Joke</h2>
+      <p id="joke-text">Loading...</p>
+      <button id="new-joke-btn">New Joke</button>
+    </section>
+
+    <section id="dictionary-section" aria-label="Dictionary Lookup">
+      <h2>Dictionary</h2>
+      <form id="word-form">
+        <label for="word-input">Enter a word:</label>
+        <input type="text" id="word-input" placeholder="e.g. hello" required>
+        <button type="submit">Look Up</button>
+      </form>
+      <div id="definition-output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data from icanhazdadjoke.com and dictionaryapi.dev</p>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>
